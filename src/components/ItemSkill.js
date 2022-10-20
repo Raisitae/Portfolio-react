@@ -4,8 +4,8 @@ const ItemSkill = ({ skills }) => {
   return (
     <li className="ul__skills-lista" key={skills.key}>
       <div className="li__item-skill">
-        <img src={skills.img} />
-        <p>{skills.name}</p>
+        <img className="img__skill" src={skills.img} alt={skills.alt} />
+        <h3>{skills.name}</h3>
       </div>
     </li>
   );

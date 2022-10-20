@@ -2,11 +2,15 @@ import React from "react";
 
 const ItemEducation = ({ educations }) => {
   return (
-    <li className="ul__skills-lista" key={educations.key}>
-      <div className="li__item-skill">
-        <img src={educations.img} />
-        <p>{educations.name}</p>
-      </div>
+    <li className="li__item-formacion" key={educations.key}>
+      <img
+        className="img__formacion"
+        src={educations.img}
+        alt={educations.alt}
+      />
+      <h3 className="title__formacion">{educations.name}</h3>
+      <p>{educations.description}</p>
+      <p>{educations.ano}</p>
     </li>
   );
 };
