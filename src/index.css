@@ -59,6 +59,8 @@ h2 {
     "form form form" auto
     "footer footer footer" auto / 1fr 1fr 1fr;
 */
+  display: flex;
+  flex-direction: column;
   background-image: url(../public/img/background.jpg);
   background-attachment: fixed;
   object-fit: scale-down;
@@ -169,19 +171,38 @@ main {
   background-color: rgb(255, 255, 255);
 }
 
-.div__presentacion-texto > p {
-  font-size: 1.3em;
-  text-align: center;
-  display: block;
-  padding-top: 2rem;
+/* */
+
+.texto__presentacion {
+  font-size: 1em;
   line-height: 2rem;
-  color: rgb(51, 51, 51);
+  color: rgb(231, 231, 231);
+}
+
+.span__color {
+  color: rgb(255, 129, 192);
+}
+.Typewriter__wrapper:first-child {
+  color: rgb(255, 129, 192);
+  line-height: 1.5rem;
+}
+
+.div__fakecode {
+  background-color: rgb(27, 27, 27);
+
+  padding: 3rem;
+  margin: 4rem 2rem;
+  border-radius: 2rem;
+  min-width: 40rem;
+  min-height: 20rem;
+  /* min-width: 70vw; */
 }
 
 .div__presentacion {
   display: flex;
   justify-content: center;
-  height: 70vh;
+  align-items: center;
+
   background-color: rgb(255, 255, 255);
 }
 
@@ -191,6 +212,8 @@ main {
   justify-content: center;
   width: 30vw;
 }
+
+/* */
 
 .span__nombre {
   background-color: yellow;
@@ -224,8 +247,7 @@ main {
   text-align: center;
 }
 
-.div__skills > h2,
-.div__formacion > h3 {
+.titulo__sections {
   margin-bottom: 2rem;
 }
 
@@ -237,6 +259,9 @@ main {
   margin: 1rem 0rem;
 }
 
+.section__listas {
+  background-color: #eee;
+}
 .li__item-skill,
 .li__item-formacion {
   display: flex;
