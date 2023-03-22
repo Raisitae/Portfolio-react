@@ -13,10 +13,23 @@ const ItemProject = ({ projects }) => {
       <h3>{projects.name}</h3>
       <p>{projects.description}</p>
       <p>{projects.langages}</p>
-      <div className="div__botonera-proyecto">
-        <button className="button__proyecto-demo">DEMO</button>
-        <button className="button__proyecto-repo">REPOSITORIO</button>
-      </div>
+
+      {projects.demo && projects.repo ? (
+        <div className="div__botonera-proyecto">
+          <a href={projects.demolink} target="_blank">
+            <button className="button__proyecto-demo">DEMO</button>
+          </a>
+          <a href={projects.repolink} target="_blank">
+            <button className="button__proyecto-repo">REPOSITORIO</button>
+          </a>
+        </div>
+      ) : (
+        <div className="div__botonera-proyecto">
+          <a href={projects.repolink} target="_blank">
+            <button className="button__proyecto-demo">DEMO</button>
+          </a>
+        </div>
+      )}
     </li>
   );
 };

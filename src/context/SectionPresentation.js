@@ -4,7 +4,7 @@ import Typewriter from "typewriter-effect";
 const SectionPresentation = () => {
   return (
     <section>
-      <div className="div__presentacion">
+      <div className="div__presentacion" id="about">
         <div className="div__fakecode">
           <Typewriter
             onInit={(typewriter) => {
@@ -32,7 +32,7 @@ const SectionPresentation = () => {
                 .typeString("h2")
                 .typeString("<![CDATA[<data>></data>")
                 .typeString(
-                  '<span style="color: lightblue"> Desarrolladora FrontEnd. </span>'
+                  '<span style="color: lightblue"> Desarrolladora Frontend. </span>'
                 )
                 .typeString("<![CDATA[<data><</data>")
                 .typeString("h2")

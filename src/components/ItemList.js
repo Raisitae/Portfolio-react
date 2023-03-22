@@ -10,7 +10,7 @@ const ItemList = ({ skills, educations, projects }) => {
   AOS.init();
   return (
     <section className="section__listas">
-      <div className="div__skills">
+      <div className="div__skills" id="skills">
         <h2
           className="titulo__sections"
           data-aos="fade-up"
@@ -30,7 +30,7 @@ const ItemList = ({ skills, educations, projects }) => {
           ))}
         </ul>
       </div>
-      <div className="div__proyectos">
+      <div className="div__proyectos" id="education">
         <h2
           className="titulo__sections"
           data-aos="fade-up"
@@ -50,7 +50,7 @@ const ItemList = ({ skills, educations, projects }) => {
           ))}
         </ul>
       </div>
-      <div className="div__proyectos">
+      <div className="div__proyectos" id="projects">
         <h2
           className="titulo__sections"
           data-aos="fade-up"

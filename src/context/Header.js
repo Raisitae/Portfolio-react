@@ -16,7 +16,6 @@ const Header = () => {
           placeholder="🔒 www.raisaerlich.com"
           disabled
         />
-        <div className="div__prueba"></div>
       </div>
       <NavBar />
     </header>
